@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic CIC | Pieces for change</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --amber: #D97706;
+            --warm-green: #059669;
+            --terracotta: #C2410C;
+            --charcoal: #374151;
+            --warm-grey: #F3F4F6;
+            --off-white: #FFFBEB;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--charcoal);
+            background: var(--off-white);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 2rem 5%;
+            border-bottom: 2px solid var(--warm-grey);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .brand h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: var(--amber);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--amber) 0%, var(--warm-green) 100%);
+            color: white;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .mission-content p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .what-we-do {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .what-we-do ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .what-we-do li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--warm-grey);
+            font-size: 1.125rem;
+            line-height: 1.7;
+        }
+
+        .what-we-do li:last-child {
+            border-bottom: none;
+        }
+
+        .what-we-do li strong {
+            color: var(--amber);
+            font-weight: 600;
+        }
+
+        .focus-area {
+            background: var(--warm-grey);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .focus-area h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--warm-green);
+        }
+
+        .focus-area p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+        }
+
+        .cta-section {
+            background: var(--charcoal);
+            color: white;
+            text-align: center;
+            padding: 4rem 5%;
+        }
+
+        .cta-section h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--amber);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--terracotta);
+        }
+
+        footer {
+            background: white;
+            padding: 2rem 5%;
+            text-align: center;
+            border-top: 2px solid var(--warm-grey);
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            color: var(--charcoal);
+        }
+
+        footer a {
+            color: var(--warm-green);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.125rem;
+            }
+
+            h3 {
+                font-size: 1.75rem;
+            }
+
+            section {
+                padding: 3rem 5%;
+            }
+
+            .what-we-do {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/8fe6768c-d4bf-41e8-a439-b0a6c6d0bf1d" alt="Mosaic CIC logo" class="logo">
+            <div class="brand">
+                <h1>Mosaic CIC</h1>
+                <p class="tagline">Pieces for change</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Communities facing deprivation shape the policies that affect them</h2>
+            <p>We surface the untapped potential in the UK's most deprived areas and create pathways for that voice to reach the people who make decisions.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="mission-content">
+            <h3>Why We Exist</h3>
+            <p>People in deprived communities know what's broken. They rarely get asked what it is. Even more rarely do they get heard by the people who can fix it.</p>
+            <p>Mosaic CIC changes that. We research the barriers keeping people excluded from opportunity. We turn that research into evidence policymakers can't ignore. And we make sure communities have a seat at the table when decisions get made.</p>
+            <p><strong>Because people closest to the problem are closest to the solution, but furthest from power.</strong></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="what-we-do">
+            <h3>What We Do</h3>
+            <ul>
+                <li><strong>Research with communities.</strong> We start with lived experience. We work with communities, not at them. That becomes rigorous research, the kind that shifts policy and employer practice.</li>
+                <li><strong>Build networks that matter.</strong> Research alone is just paper. We bring together charities, employers, and decision-makers and hold them accountable to act on what the evidence shows.</li>
+                <li><strong>Advocate for change.</strong> We turn evidence into policy recommendations and employer guidance. We don't just document problems. We drive solutions.</li>
+            </ul>
+        </div>
+
+        <div class="focus-area">
+            <h4>Our First Campaign</h4>
+            <p>We're tackling DBS disclosure and unfair employer exclusion, a barrier affecting thousands across the North West. People who've turned their lives around are being locked out of work because of how employers interpret criminal records.</p>
+            <p>This is our entry point. Our mission is wider: tackling the barriers that drive deprivation across income, employment, education, health, housing, and environment.</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h3>Get Involved</h3>
+        <p>If you work in criminal justice, employment, social mobility, or policy in the North West and you believe communities should shape the decisions that affect them, let's connect.</p>
+        <a href="https://www.linkedin.com/company/mosaic-cic" class="cta-button" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mosaic CIC. Community Interest Company registered in England and Wales.</p>
+        <p>Contact: <a href="mailto:hello@mosaiccic.org">hello@mosaiccic.org</a></p>
+    </footer>
+</body>
+</html>
